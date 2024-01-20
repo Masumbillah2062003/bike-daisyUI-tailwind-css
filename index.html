@@ -46,19 +46,19 @@
     <header class="container mx-auto bg-[#264653] lg:px-24 lg:py-8 p-6">
         <nav>
             <div class="navbar text-white">
-                <div class="lg:flex lg:flex-1 gap-3 lg:gap-0">
+                <div class="flex lg:flex-1 lg:gap-0 lg:flex-row lg:justify-normal flex-row-reverse justify-between w-full">
                     <div class="dropdown">
-                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                        <div tabindex="0" role="button" class="btn btn-ghost border-2 border-white lg:hidden ">
                             <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
                         </div>
-                        <ul tabindex="0" class="menu menu-sm text-base dropdown-content mt-3 z-[1] p-2 shadow bg-[#264653] rounded-box w-52">
+                        <ul tabindex="0" class="menu menu-sm text-base dropdown-content mt-3 z-[1] p-2 shadow bg-[#2f5766] rounded-box absolute -right-5">
                             <li><a>Home</a></li>
                             <li><a>Shop</a></li>
                             <li><a>News</a></li>
                             <li><a>Contact</a></li>
                         </ul>
                     </div>
-                    <a class="btn btn-ghost text-2xl">Biker Shop</a>
+                    <a class="lg:btn lg:btn-ghost lg:text-2xl text-3xl font-bold">Biker Shop</a>
                 </div>
                 <div class="navbar-center text-base hidden lg:flex">
                     <ul class="menu menu-horizontal px-1">
@@ -78,7 +78,7 @@
         <div class="carousel w-full mt-6">
             <div id="slide1" class="carousel-item relative w-full flex items-center justify-center">
                 <div class="lg:flex lg:justify-center lg:items-center lg:gap-7">
-                    <div class="lg:space-y-10 space-y-5 flex flex-col justify-center items-center lg:items-start">
+                    <div class="lg:space-y-10 text-center lg:text-start space-y-5 flex flex-col justify-center items-center lg:items-start">
                         <h1 class="text-white lg:text-5xl text-3xl font-bold">
                             Honda CBR 300R
                         </h1>
@@ -166,5 +166,24 @@
             </div> 
         </div>
     </header>
+    <main class="mt-16 lg:px-24 lg:py-8 p-5">
+        <section class="mb-36">
+            <div class="text-center font-[600]">
+                <h1 class=" text-[#000] lg:text-5xl text-xl">
+                    Fetured Bikes In This Year
+                </h1>
+                <p class="text-[#E76F51] text-sm">
+                    Best bike collection
+                    <hr class="w-20 mx-auto border-b-1 border-[#E76F51] outline-none">
+                </p>
+            </div>
+            <div class="flex lg:items-center lg:justify-between mt-28 lg:gap-0 gap-24 lg:flex-row flex-col">
+                <img src="images/slider/bike1.png" alt="" class="lg:w-44 lg:h-44 w-full">
+                <img src="images/slider/bike2.png" alt="" class="lg:w-44 lg:h-44 w-full">
+                <img src="images/slider/bike3.png" alt="" class="lg:w-44 lg:h-44 w-full">
+                <img src="images/slider/bike4.png" alt="" class="lg:w-44 lg:h-44 w-full">
+            </div>
+        </section>
+    </main>
 </body>
 </html>
